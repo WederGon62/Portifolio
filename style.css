@@ -1,0 +1,264 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte base e cores */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Navegação */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #21a1f1;
+}
+
+/* Seções principais */
+main {
+  margin: 40px 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #282c34;
+  margin-bottom: 15px;
+}
+
+article {
+  background-color: white;
+  border-left: 4px solid #61dafb;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+article h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+article p {
+  margin-bottom: 10px;
+}
+
+article a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #61dafb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+article a:hover {
+  background-color: #21a1f1;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #777;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #21a1f1;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  article {
+    padding: 15px;
+  }
+
+}
+/* Alinhar seções "Sobre mim" e "Projetos recentes" à esquerda da tela */
+#sobre,
+#projetos {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  text-align: left;
+}
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+form button {
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #21a1f1;
+}
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+#contato {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#contato h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#contato p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+#contato a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+}
+form {
+  max-width: 600px;
+  margin: 30px auto 0 auto;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
